@@ -1,0 +1,2744 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI Video Creator - Generate a short video in 3 minutes">
+      
+      
+        <meta name="author" content="Pixelle.AI">
+      
+      
+        <link rel="canonical" href="https://AIDC-AI.github.io/Pixelle-Video/superpowers/specs/2026-09-28-merchant-commercialization-foundation-design/">
+      
+      
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../../zh/superpowers/specs/2026-09-28-merchant-commercialization-foundation-design/" hreflang="zh">
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Pixelle-Video 本地商家商业化基础改造设计 - Pixelle-Video</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pixelle-video" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Pixelle-Video" class="md-header__button md-logo" aria-label="Pixelle-Video" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pixelle-Video
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pixelle-Video 本地商家商业化基础改造设计
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../zh/superpowers/specs/2026-09-28-merchant-commercialization-foundation-design/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AIDC-AI/Pixelle-Video" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AIDC-AI/Pixelle-Video
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../user-guide/web-ui/" class="md-tabs__link">
+          
+  
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../gallery/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gallery
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tutorials/your-first-video/" class="md-tabs__link">
+          
+  
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/api-overview/" class="md-tabs__link">
+          
+  
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../development/architecture/" class="md-tabs__link">
+          
+  
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../troubleshooting/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Pixelle-Video" class="md-nav__button md-logo" aria-label="Pixelle-Video" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pixelle-Video
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AIDC-AI/Pixelle-Video" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AIDC-AI/Pixelle-Video
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/web-ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gallery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gallery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/your-first-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Your First Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/custom-style/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Style
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/voice-cloning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voice Cloning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/api-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/config-schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../development/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../development/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 产品边界
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 产品边界">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 第一阶段服务对象
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 第一阶段不做
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 方案比较与选择
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 方案比较与选择">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案 A：只修登录和页面
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案 B：单体应用内完成多租户基础改造（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-saas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案 C：立即重写为完整 SaaS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 总体架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 核心领域模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 核心领域模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-tenants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 tenants（商家）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 users（用户）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-tenant_memberships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 tenant_memberships（商家成员关系）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-provider_credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 provider_credentials（供应商凭据）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 projects（项目）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 assets（素材）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-generation_jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 generation_jobs（生成任务）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-job_events-audit_logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8 job_events 与 audit_logs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 身份认证与授权边界
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 身份认证与授权边界">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 登录安全
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 租户上下文
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 路由策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-byok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. BYOK 密钥管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. BYOK 密钥管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 加密方案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 配置体验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 配置应用方式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 任务系统
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 任务系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 状态流转
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 执行原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 供应商调用记录
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 文件与存储隔离
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 文件与存储隔离">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 存储键
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 下载接口
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 生命周期
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 配额、限流和资源保护
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 供应商适配层
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. 前端最小调整
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. 部署与运维
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. 部署与运维">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 推荐组件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 可观测性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. 迁移策略
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. 迁移策略">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 0：立即止血
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 1：建立租户与安全基座
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 2：任务与文件可靠性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 3：运营保护
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段 4：前端与业务增强
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. 测试与验收标准
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. 测试与验收标准">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 安全与隔离
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 任务可靠性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-byok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 配置与 BYOK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.4 运维
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. 现有代码的主要改造落点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. 完成定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="pixelle-video">Pixelle-Video 本地商家商业化基础改造设计<a class="headerlink" href="#pixelle-video" title="Permanent link">&para;</a></h1>
+<p>日期：2026-09-28<br />
+阶段：设计确认版<br />
+目标：在暂不重做 Streamlit 前端的前提下，把现有项目改造成可由单台无 GPU 服务器承载、多个本地商家安全共用、商家自带第三方 API Key（BYOK）的多租户视频生成平台。</p>
+<h2 id="1">1. 产品边界<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 第一阶段服务对象<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>平台由运营方统一部署和维护。</li>
+<li>客户主要是本地商家，不面向匿名大众开放注册。</li>
+<li>商家账号由管理员创建，或后续通过邀请码开通。</li>
+<li>商家自行购买并配置模型供应商 API Key。</li>
+<li>平台收取软件使用费、维护费或服务费，不代收第一阶段的模型调用费用。</li>
+<li>服务器不运行本地图像或视频模型，主要负责业务 API、任务调度、轻量视频合成、文件管理和审计。</li>
+</ul>
+<h3 id="12">1.2 第一阶段不做<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>不重做完整前端，不追求复杂视觉设计。</li>
+<li>不接微信支付、支付宝或自动订阅。</li>
+<li>不做公众自助注册、开放市场或模板交易。</li>
+<li>不同时接入大量新模型供应商；优先稳定现有适配器。</li>
+<li>不建设复杂企业组织架构，只保留未来扩展空间。</li>
+<li>不在第一阶段引入 Kubernetes 或微服务拆分。</li>
+</ul>
+<h2 id="2">2. 方案比较与选择<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="a">方案 A：只修登录和页面<a class="headerlink" href="#a" title="Permanent link">&para;</a></h3>
+<p>保留全局配置、内存任务和公共文件目录，只在页面上限制访问。</p>
+<p>优点是开发量最小；缺点是后端接口仍可绕过页面访问，任务、文件和 API Key 仍可能串租户，不满足收费运营的安全底线。因此不采用。</p>
+<h3 id="b">方案 B：单体应用内完成多租户基础改造（推荐）<a class="headerlink" href="#b" title="Permanent link">&para;</a></h3>
+<p>保留 FastAPI、Streamlit 和现有核心生成模块，新增统一租户上下文、数据库任务、加密凭据、文件隔离、队列 Worker 和审计。前端只做必要对接。</p>
+<p>优点是复用现有约 2.5 万行代码，风险和成本可控，适合首批本地商家；缺点是需要系统性修改生成入口，不能只做局部补丁。</p>
+<h3 id="c-saas">方案 C：立即重写为完整 SaaS<a class="headerlink" href="#c-saas" title="Permanent link">&para;</a></h3>
+<p>采用独立前端、微服务、对象存储、计费中心和复杂组织权限。</p>
+<p>长期扩展性最好，但开发周期、运维复杂度和初期成本过高，尚未经过真实商家需求验证。因此暂不采用。</p>
+<p><strong>决定：采用方案 B。</strong> 先完成安全、隔离、任务可靠性和可运维性，再根据实际商家使用情况决定是否重做前端或升级架构。</p>
+<h2 id="3">3. 总体架构<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>商家浏览器
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    │
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    ▼
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Streamlit Web（暂时保留）
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    │  只通过受保护 API 操作业务数据
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    ▼
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>FastAPI
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    ├── 身份认证与租户上下文
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    ├── 商家、成员、凭据、项目和任务 API
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    ├── 配额、限流与审计
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    └── 生成任务提交
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>             │
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>             ▼
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        Redis 任务队列
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>             │
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>             ▼
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        Worker 进程
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    ├── 加载商家加密凭据
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    ├── 调用 LLM / 图片 / 视频 / TTS API
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    ├── 轮询、重试和超时处理
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    ├── FFmpeg 轻量合成
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    └── 保存结果并更新任务状态
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>             │
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>      ┌──────┴──────┐
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>      ▼             ▼
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a> PostgreSQL       文件存储
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a> 业务元数据       本地隔离目录，后续可切 OSS/COS/S3
+</span></code></pre></div>
+<p>第一阶段仍然是一个代码仓库，但运行时至少分为 <code>web</code>、<code>api</code>、<code>worker</code>、<code>postgres</code>、<code>redis</code> 五类进程或容器。API 进程不得直接执行长时间视频任务。</p>
+<h2 id="4">4. 核心领域模型<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>所有商家业务数据必须带 <code>tenant_id</code>。仅带 <code>user_id</code> 不足以表达一个商家下未来可能存在多个员工。</p>
+<h3 id="41-tenants">4.1 tenants（商家）<a class="headerlink" href="#41-tenants" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>UUID 或不可预测主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>商家名称</td>
+</tr>
+<tr>
+<td>slug</td>
+<td>内部唯一标识</td>
+</tr>
+<tr>
+<td>status</td>
+<td>active / suspended / closed</td>
+</tr>
+<tr>
+<td>plan_code</td>
+<td>人工分配的套餐标识</td>
+</tr>
+<tr>
+<td>max_concurrent_jobs</td>
+<td>最大并发任务数</td>
+</tr>
+<tr>
+<td>daily_job_limit</td>
+<td>每日任务数限制</td>
+</tr>
+<tr>
+<td>storage_limit_bytes</td>
+<td>存储上限</td>
+</tr>
+<tr>
+<td>created_at / updated_at</td>
+<td>审计时间</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-users">4.2 users（用户）<a class="headerlink" href="#42-users" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>用户主键</td>
+</tr>
+<tr>
+<td>username</td>
+<td>登录名，全局唯一或租户内唯一需选定一种；第一阶段采用全局唯一</td>
+</tr>
+<tr>
+<td>password_hash</td>
+<td>Argon2id 或 bcrypt 哈希</td>
+</tr>
+<tr>
+<td>status</td>
+<td>active / disabled</td>
+</tr>
+<tr>
+<td>is_platform_admin</td>
+<td>是否为平台管理员</td>
+</tr>
+<tr>
+<td>last_login_at</td>
+<td>最近登录时间</td>
+</tr>
+<tr>
+<td>created_at / updated_at</td>
+<td>审计时间</td>
+</tr>
+</tbody>
+</table>
+<h3 id="43-tenant_memberships">4.3 tenant_memberships（商家成员关系）<a class="headerlink" href="#43-tenant_memberships" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tenant_id</td>
+<td>商家 ID</td>
+</tr>
+<tr>
+<td>user_id</td>
+<td>用户 ID</td>
+</tr>
+<tr>
+<td>role</td>
+<td>owner / manager / member</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>创建时间</td>
+</tr>
+</tbody>
+</table>
+<p>首版 UI 可以做到一个账号只属于一个商家，但后端数据结构不写死这一限制。</p>
+<h3 id="44-provider_credentials">4.4 provider_credentials（供应商凭据）<a class="headerlink" href="#44-provider_credentials" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>凭据 ID</td>
+</tr>
+<tr>
+<td>tenant_id</td>
+<td>所属商家</td>
+</tr>
+<tr>
+<td>provider</td>
+<td>openai / dashscope / ark / kling / runninghub 等</td>
+</tr>
+<tr>
+<td>label</td>
+<td>商家可识别名称</td>
+</tr>
+<tr>
+<td>encrypted_payload</td>
+<td>加密后的 API Key、Secret 等 JSON</td>
+</tr>
+<tr>
+<td>key_fingerprint</td>
+<td>不可逆指纹，用于识别重复密钥和审计</td>
+</tr>
+<tr>
+<td>masked_hint</td>
+<td>例如末四位，供页面显示</td>
+</tr>
+<tr>
+<td>status</td>
+<td>active / invalid / disabled</td>
+</tr>
+<tr>
+<td>last_tested_at</td>
+<td>最近连接测试时间</td>
+</tr>
+<tr>
+<td>last_test_result</td>
+<td>success / failed</td>
+</tr>
+<tr>
+<td>created_by</td>
+<td>创建人</td>
+</tr>
+<tr>
+<td>created_at / updated_at</td>
+<td>审计时间</td>
+</tr>
+</tbody>
+</table>
+<p>凭据查询接口永远不返回完整密钥。更新时，空值表示保留原密钥，显式 <code>delete=true</code> 才删除。</p>
+<h3 id="45-projects">4.5 projects（项目）<a class="headerlink" href="#45-projects" title="Permanent link">&para;</a></h3>
+<p>用于把同一商家的素材和生成任务按活动、商品或门店归组。</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>项目 ID</td>
+</tr>
+<tr>
+<td>tenant_id</td>
+<td>所属商家</td>
+</tr>
+<tr>
+<td>name</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>created_by</td>
+<td>创建人</td>
+</tr>
+<tr>
+<td>status</td>
+<td>active / archived</td>
+</tr>
+<tr>
+<td>created_at / updated_at</td>
+<td>审计时间</td>
+</tr>
+</tbody>
+</table>
+<h3 id="46-assets">4.6 assets（素材）<a class="headerlink" href="#46-assets" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>素材 ID</td>
+</tr>
+<tr>
+<td>tenant_id / project_id</td>
+<td>所属商家和项目</td>
+</tr>
+<tr>
+<td>object_key</td>
+<td>存储键，不保存任意绝对路径</td>
+</tr>
+<tr>
+<td>original_name</td>
+<td>原始文件名，仅用于展示</td>
+</tr>
+<tr>
+<td>media_type</td>
+<td>image / video / audio / document</td>
+</tr>
+<tr>
+<td>mime_type / size_bytes / sha256</td>
+<td>文件校验信息</td>
+</tr>
+<tr>
+<td>status</td>
+<td>uploading / ready / quarantined / deleted</td>
+</tr>
+<tr>
+<td>created_by / created_at</td>
+<td>审计信息</td>
+</tr>
+</tbody>
+</table>
+<h3 id="47-generation_jobs">4.7 generation_jobs（生成任务）<a class="headerlink" href="#47-generation_jobs" title="Permanent link">&para;</a></h3>
+<p>替代当前内存任务，并成为视频历史的唯一真实来源。</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>不可预测任务 ID</td>
+</tr>
+<tr>
+<td>tenant_id / project_id / created_by</td>
+<td>所属范围</td>
+</tr>
+<tr>
+<td>job_type</td>
+<td>standard / asset_based / i2v / digital_human / action_transfer</td>
+</tr>
+<tr>
+<td>status</td>
+<td>queued / running / waiting_provider / succeeded / failed / cancelled</td>
+</tr>
+<tr>
+<td>progress_percent / progress_stage</td>
+<td>进度</td>
+</tr>
+<tr>
+<td>request_payload</td>
+<td>去除密钥后的规范化输入 JSON</td>
+</tr>
+<tr>
+<td>result_payload</td>
+<td>输出素材 ID、时长、尺寸等，不保存公开 URL</td>
+</tr>
+<tr>
+<td>provider_snapshot</td>
+<td>供应商和模型名称，不包含凭据</td>
+</tr>
+<tr>
+<td>attempt_count</td>
+<td>已尝试次数</td>
+</tr>
+<tr>
+<td>idempotency_key</td>
+<td>防止重复提交</td>
+</tr>
+<tr>
+<td>error_code / error_message</td>
+<td>对用户安全的错误信息</td>
+</tr>
+<tr>
+<td>queued_at / started_at / completed_at</td>
+<td>生命周期时间</td>
+</tr>
+</tbody>
+</table>
+<h3 id="48-job_events-audit_logs">4.8 job_events 与 audit_logs<a class="headerlink" href="#48-job_events-audit_logs" title="Permanent link">&para;</a></h3>
+<p><code>job_events</code> 记录任务进度和供应商调用阶段；<code>audit_logs</code> 记录登录、配置密钥、创建/取消任务、下载/删除文件和管理员操作。两者均不得记录完整 API Key、Authorization 头或敏感素材内容。</p>
+<h2 id="5">5. 身份认证与授权边界<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 登录安全<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<ul>
+<li>JWT 签名密钥从环境变量或 secret 文件读取，启动时缺失则拒绝生产模式启动。</li>
+<li>密码改为 Argon2id 或 bcrypt，不继续使用无盐 SHA-256。</li>
+<li>默认 <code>admin/admin123</code> 只允许首次初始化使用，并强制首次登录改密；生产部署不得在页面展示默认密码。</li>
+<li>Access Token 缩短有效期，并提供可撤销的会话或 refresh token 机制。</li>
+<li>登录增加速率限制和失败审计。</li>
+</ul>
+<h3 id="52">5.2 租户上下文<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<p>所有受保护请求统一得到：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>RequestContext {
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  user_id,
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  tenant_id,
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  tenant_role,
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  is_platform_admin,
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  request_id
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>}
+</span></code></pre></div>
+<p>业务路由不得自行相信前端提交的 <code>tenant_id</code>。普通用户的租户必须由登录身份和成员关系推导；平台管理员跨租户操作必须使用独立管理接口并写审计日志。</p>
+<h3 id="53">5.3 路由策略<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>/health</code> 可匿名访问，但只返回存活状态，不暴露内部配置。</li>
+<li><code>/auth/login</code> 可匿名访问并限流。</li>
+<li>模板公共元数据可以按需匿名或登录可见；工作流内容、任务、模型调用、文件和配置必须登录。</li>
+<li>所有 <code>llm</code>、<code>content</code>、<code>image</code>、<code>tts</code>、<code>video</code>、<code>frame</code>、<code>tasks</code> 和 <code>files</code> 业务接口必须注入租户上下文。</li>
+<li>任务查看、取消、文件下载必须同时匹配 <code>tenant_id</code> 和资源 ID，不能只靠猜测 task ID 或文件路径。</li>
+</ul>
+<h2 id="6-byok">6. BYOK 密钥管理<a class="headerlink" href="#6-byok" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 加密方案<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<ul>
+<li>使用服务器主密钥对供应商凭据做信封加密或至少使用成熟的对称认证加密算法。</li>
+<li>主密钥不进入数据库、不写进代码仓库、不出现在日志中。</li>
+<li>支持后续密钥轮换，密文带 <code>key_version</code>。</li>
+<li>只有 Worker 在执行任务时短暂解密所需凭据。</li>
+<li>解密后的密钥不进入任务 JSON、异常文本、缓存键或日志字段。</li>
+</ul>
+<h3 id="62">6.2 配置体验<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<p>前端暂时只需提供四个动作：选择供应商、填写密钥、测试连接、保存。模型名、Base URL 和常规参数尽量由服务器提供推荐默认值；高级字段折叠展示。</p>
+<h3 id="63">6.3 配置应用方式<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<p>现有全局 <code>config.yaml</code> 只保存平台级非敏感默认值。商家生成任务时：</p>
+<ol>
+<li>根据 <code>tenant_id</code> 读取商家选择的供应商和模型配置。</li>
+<li>Worker 加载对应加密凭据。</li>
+<li>构造任务级 <code>GenerationContext</code>。</li>
+<li>将上下文显式传递给 LLM、图片、视频和 TTS 服务。</li>
+</ol>
+<p>不得再通过全局可变 <code>config_manager</code> 切换不同商家的密钥，否则并发任务会互相污染。</p>
+<h2 id="7">7. 任务系统<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<h3 id="71">7.1 状态流转<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>queued → running → waiting_provider → running → succeeded
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>                   └───────────────→ failed
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>queued/running/waiting_provider ───→ cancelled
+</span></code></pre></div>
+<p>每次状态变化同时写数据库和 <code>job_events</code>。Redis 只承担投递、锁和短期进度，不作为任务事实来源。</p>
+<h3 id="72">7.2 执行原则<a class="headerlink" href="#72" title="Permanent link">&para;</a></h3>
+<ul>
+<li>API 创建数据库任务后再投递队列；投递失败则任务标记为失败或进入补偿扫描。</li>
+<li>Worker 使用数据库抢占或可靠队列机制，避免同一任务重复执行。</li>
+<li>外部供应商调用设置连接超时、响应超时和总任务截止时间。</li>
+<li>只对明确可重试的网络错误、限流和供应商 5xx 重试，参数错误和余额不足不自动重试。</li>
+<li>使用指数退避并限制最大次数。</li>
+<li>任务提交支持幂等键，浏览器重复点击不能重复扣占资源。</li>
+<li>服务重启后，超时的 <code>running</code> 任务由恢复任务重新判断或标记失败。</li>
+<li>取消任务需要同时更新状态，并在供应商支持时调用供应商取消接口。</li>
+</ul>
+<h3 id="73">7.3 供应商调用记录<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<p>每次外部调用记录供应商、模型、请求时间、响应时间、状态码、供应商任务 ID、重试次数和可获得的用量数据。不得记录密钥和完整敏感输入。</p>
+<p>即使采用 BYOK，也需要这些记录来排查商家问题和识别平台资源消耗。</p>
+<h2 id="8">8. 文件与存储隔离<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<h3 id="81">8.1 存储键<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
+<p>第一阶段可继续使用服务器磁盘，但目录必须按租户和任务隔离：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>data/tenants/{tenant_id}/assets/{asset_id}/source.ext
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>output/tenants/{tenant_id}/jobs/{job_id}/final.mp4
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>output/tenants/{tenant_id}/jobs/{job_id}/intermediate/...
+</span></code></pre></div>
+<p>业务接口只接受 <code>asset_id</code> 或 <code>file_id</code>，不接受客户端传入任意服务器路径。</p>
+<h3 id="82">8.2 下载接口<a class="headerlink" href="#82" title="Permanent link">&para;</a></h3>
+<ul>
+<li>下载前查询数据库并验证资源所属租户。</li>
+<li>使用规范化、解析后的受控路径，并确认最终路径位于该租户根目录之内。</li>
+<li>不直接公开 <code>workflows/</code>、<code>templates/</code> 或服务器文件系统。</li>
+<li>响应增加合适的 Content-Type、文件名和缓存策略。</li>
+<li>后续迁移对象存储时，接口可改成短时签名 URL，数据库模型无需变化。</li>
+</ul>
+<h3 id="83">8.3 生命周期<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
+<ul>
+<li>删除素材或任务先做软删除，再由后台清理文件。</li>
+<li>临时文件必须绑定任务并设置过期时间。</li>
+<li>定期统计每个租户的存储用量。</li>
+<li>上传限制扩展名、MIME、文件大小和媒体可解析性；高风险文件不直接执行或渲染。</li>
+</ul>
+<h2 id="9">9. 配额、限流和资源保护<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<p>即使商家自带 API Key，平台仍需限制自身资源：</p>
+<ul>
+<li>每商家同时运行任务数。</li>
+<li>每用户和每 IP 的登录及 API 请求频率。</li>
+<li>每日提交任务数。</li>
+<li>单任务场景数、素材数量、原始文件大小、输出时长和分辨率。</li>
+<li>每商家存储空间。</li>
+<li>Worker 全局并发数和 FFmpeg 并发数。</li>
+</ul>
+<p>配额检查发生在任务入队前；Worker 执行前再次校验关键限制，避免竞态。额度不足或并发已满应返回明确的业务错误，不返回服务器异常。</p>
+<h2 id="10">10. 供应商适配层<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<p>现有 API 服务代码继续复用，但统一为以下能力接口：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>LLMProvider.generate(...)
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>ImageProvider.submit(...) / poll(...) / cancel(...)
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>VideoProvider.submit(...) / poll(...) / cancel(...)
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>TTSProvider.synthesize(...)
+</span></code></pre></div>
+<p>统一输出标准错误类型：认证失败、余额不足、限流、参数错误、内容审核拒绝、供应商超时、供应商故障和未知错误。业务层不依赖供应商原始错误文案。</p>
+<p>第一阶段不做复杂自动选路。每项能力由商家明确选择一个默认供应商；后续可以增加备用供应商和失败切换。</p>
+<h2 id="11_1">11. 前端最小调整<a class="headerlink" href="#11_1" title="Permanent link">&para;</a></h2>
+<p>暂不改变整体页面和视觉风格，只做维持安全闭环所必需的修改：</p>
+<ul>
+<li>所有业务操作通过 FastAPI，不再直接读写全局 <code>config.yaml</code> 或本地历史目录。</li>
+<li>每个页面统一检查服务端会话，不能只相信 <code>st.session_state.logged_in</code>。</li>
+<li>配置页面改为商家凭据列表、掩码显示和连接测试。</li>
+<li>生成页面提交任务后轮询任务 API，不在 Streamlit 会话内执行完整生成。</li>
+<li>历史页面从数据库任务 API 读取，只显示当前租户数据。</li>
+<li>下载、删除和取消操作均调用受保护 API。</li>
+</ul>
+<h2 id="12_1">12. 部署与运维<a class="headerlink" href="#12_1" title="Permanent link">&para;</a></h2>
+<h3 id="121">12.1 推荐组件<a class="headerlink" href="#121" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Nginx：HTTPS、请求大小限制和反向代理。</li>
+<li>FastAPI：无状态 API，可先运行 1～2 个进程。</li>
+<li>Streamlit：现阶段 Web UI。</li>
+<li>PostgreSQL：业务数据和任务事实来源。</li>
+<li>Redis：任务队列、分布式锁和限流。</li>
+<li>Worker：外部 API 调用、轮询和 FFmpeg 合成。</li>
+<li>本地持久卷：第一阶段文件存储；定期备份，后续迁移对象存储。</li>
+</ul>
+<h3 id="122">12.2 可观测性<a class="headerlink" href="#122" title="Permanent link">&para;</a></h3>
+<ul>
+<li>每个请求和任务生成 <code>request_id/job_id</code>，贯穿日志。</li>
+<li>日志结构化输出，自动脱敏 Authorization、Cookie、API Key 和 Secret。</li>
+<li>至少监控 API 存活、队列长度、运行任务数、任务成功率、平均耗时、磁盘空间和供应商错误率。</li>
+<li>数据库和用户文件分别备份，并定期验证恢复流程。</li>
+</ul>
+<h2 id="13">13. 迁移策略<a class="headerlink" href="#13" title="Permanent link">&para;</a></h2>
+<h3 id="0">阶段 0：立即止血<a class="headerlink" href="#0" title="Permanent link">&para;</a></h3>
+<ul>
+<li>轮换当前配置文件中出现过的真实外部服务密钥。</li>
+<li>生产环境禁用默认管理员密码和硬编码 JWT 密钥。</li>
+<li>补齐依赖声明并建立可重复安装流程。</li>
+<li>临时限制 API 和文件服务只允许可信网络访问，直到鉴权改造完成。</li>
+</ul>
+<h3 id="1_1">阶段 1：建立租户与安全基座<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>引入 PostgreSQL 和数据库迁移工具。</li>
+<li>建立 tenants、memberships、credentials、projects、assets、jobs、events、audit_logs 表。</li>
+<li>改造登录、密码哈希、JWT 和统一租户上下文。</li>
+<li>为所有业务路由补充鉴权和资源所有权检查。</li>
+<li>实现凭据加密、掩码返回和连接测试。</li>
+</ul>
+<h3 id="2_1">阶段 2：任务与文件可靠性<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>用数据库任务 + Redis Worker 替代内存任务。</li>
+<li>将现有生成管线改为接收任务级上下文。</li>
+<li>建立租户文件目录、受保护下载和临时文件清理。</li>
+<li>将历史记录统一迁移为 <code>generation_jobs</code>。</li>
+</ul>
+<h3 id="3_1">阶段 3：运营保护<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>增加并发、任务、时长和存储限制。</li>
+<li>完善审计、脱敏日志、重试、恢复和监控。</li>
+<li>做跨租户权限测试、供应商故障测试和备份恢复演练。</li>
+</ul>
+<h3 id="4_1">阶段 4：前端与业务增强<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>改善行业模板、品牌素材、批量生成和商家体验。</li>
+<li>根据真实运营数据决定是否增加平台代付 API、支付套餐和独立前端。</li>
+</ul>
+<h2 id="14">14. 测试与验收标准<a class="headerlink" href="#14" title="Permanent link">&para;</a></h2>
+<h3 id="141">14.1 安全与隔离<a class="headerlink" href="#141" title="Permanent link">&para;</a></h3>
+<ul>
+<li>商家 A 无法通过猜测 ID、修改 URL 或调用 API 查看、下载、取消或删除商家 B 的任务和文件。</li>
+<li>任何 API 响应、日志、任务记录和错误信息中都不存在完整供应商密钥。</li>
+<li><code>../</code>、绝对路径、编码路径穿越和符号链接逃逸测试均无法访问租户根目录之外的文件。</li>
+<li>被禁用用户、被暂停商家和过期会话无法提交新任务。</li>
+</ul>
+<h3 id="142">14.2 任务可靠性<a class="headerlink" href="#142" title="Permanent link">&para;</a></h3>
+<ul>
+<li>API 或 Worker 重启后，已提交任务仍可查询。</li>
+<li>浏览器重复提交相同幂等键只创建一个任务。</li>
+<li>可重试错误按策略重试，不可重试错误立即给出明确状态。</li>
+<li>Worker 异常退出后，任务最终能恢复执行或进入可解释的失败状态，不长期卡在 running。</li>
+<li>取消任务后不再产生可见结果，已产生的临时文件会被清理。</li>
+</ul>
+<h3 id="143-byok">14.3 配置与 BYOK<a class="headerlink" href="#143-byok" title="Permanent link">&para;</a></h3>
+<ul>
+<li>每个商家可独立保存和测试自己的凭据。</li>
+<li>商家更新一个供应商配置不会影响其他商家正在执行的任务。</li>
+<li>删除凭据后，新任务无法再使用该凭据，历史任务只保留供应商名称和模型快照。</li>
+</ul>
+<h3 id="144">14.4 运维<a class="headerlink" href="#144" title="Permanent link">&para;</a></h3>
+<ul>
+<li>新服务器可以从代码、环境配置和迁移脚本重复部署。</li>
+<li>数据库和文件备份可以恢复到测试环境。</li>
+<li>磁盘不足、Redis 不可用、数据库不可用和供应商超时都有明确告警或错误表现。</li>
+</ul>
+<h2 id="15">15. 现有代码的主要改造落点<a class="headerlink" href="#15" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>当前位置</th>
+<th>主要改造</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>api/auth.py</code></td>
+<td>环境密钥、安全密码哈希、会话撤销、统一身份上下文</td>
+</tr>
+<tr>
+<td><code>api/database.py</code></td>
+<td>拆分为正式模型与数据库配置，迁移至 PostgreSQL</td>
+</tr>
+<tr>
+<td><code>api/routers/*.py</code></td>
+<td>全面鉴权、租户过滤、资源所有权校验和安全错误响应</td>
+</tr>
+<tr>
+<td><code>api/tasks/manager.py</code></td>
+<td>由内存任务改为数据库任务和 Redis Worker</td>
+</tr>
+<tr>
+<td><code>api/routers/files.py</code></td>
+<td>取消任意路径下载，改为基于 file/asset ID 的授权下载</td>
+</tr>
+<tr>
+<td><code>api/dependencies.py</code></td>
+<td>取消共享全局业务配置，注入任务级租户上下文</td>
+</tr>
+<tr>
+<td><code>pixelle_video/service.py</code></td>
+<td>接受明确的 GenerationContext，不依赖全局可变配置</td>
+</tr>
+<tr>
+<td><code>pixelle_video/services/api_services/*</code></td>
+<td>统一供应商接口、超时、重试和标准错误</td>
+</tr>
+<tr>
+<td><code>pixelle_video/services/persistence.py</code></td>
+<td>任务历史迁移到数据库，文件元数据进入 assets/jobs</td>
+</tr>
+<tr>
+<td><code>web/state/session.py</code></td>
+<td>以服务端会话为准，不在会话内直接运行长任务</td>
+</tr>
+<tr>
+<td><code>web/pages/1_⚙️_Config.py</code></td>
+<td>对接加密凭据 API，掩码显示和连接测试</td>
+</tr>
+<tr>
+<td><code>web/pages/2_🎬_Generate.py</code></td>
+<td>只提交任务和显示进度</td>
+</tr>
+<tr>
+<td><code>web/pages/3_📚_History.py</code></td>
+<td>只读取当前租户任务 API</td>
+</tr>
+<tr>
+<td><code>docker-compose.yml</code></td>
+<td>增加 PostgreSQL、Redis、Worker、健康检查和持久卷</td>
+</tr>
+<tr>
+<td><code>pyproject.toml</code></td>
+<td>补齐数据库、认证、队列、加密、迁移和测试依赖</td>
+</tr>
+</tbody>
+</table>
+<h2 id="16">16. 完成定义<a class="headerlink" href="#16" title="Permanent link">&para;</a></h2>
+<p>商业化基础改造完成，不以“页面可以登录”为标准，而以以下结果为准：</p>
+<ol>
+<li>两个测试商家可以同时使用各自 API Key 生成视频，配置不会互相污染。</li>
+<li>两个商家的任务、素材、历史、输出文件和用量完全隔离。</li>
+<li>服务器或 Worker 重启不会丢失任务事实和历史记录。</li>
+<li>所有密钥均加密存储且不会通过接口或日志泄露。</li>
+<li>所有文件下载均经过身份和租户授权。</li>
+<li>平台能限制单商家并发、任务数量和存储使用。</li>
+<li>管理员能够查看任务运行情况和错误，但默认不能看到商家的完整 API Key。</li>
+<li>项目具备自动化测试、数据库迁移、备份恢复说明和可重复部署流程。</li>
+</ol>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="October 16, 2026 06:12:22 UTC">October 16, 2026 06:12:22</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="October 16, 2026 06:12:22 UTC">October 16, 2026 06:12:22</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Pixelle.AI
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/AIDC-AI/Pixelle-Video" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
